@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>打開淘寶店鋪</title>
+<style>
+  body{font-family:sans-serif;text-align:center;padding:25vh 20px 0;background:#fff8f4}
+  h1{font-size:24px;color:#333;margin-bottom:30px}
+  a{display:block;max-width:320px;margin:0 auto 24px;font-size:28px;padding:24px 0;
+    background:#ff5000;color:#fff;border-radius:16px;text-decoration:none;font-weight:bold}
+  a.backup{font-size:20px;padding:16px 0;background:#999}
+  p{color:#666;font-size:18px}
+</style>
+</head>
+<body>
+<h1>正在打開淘寶…</h1>
+
+<a id="go" href="intent://tucanofs.world.tmall.com/shop/view_shop.htm#Intent;scheme=taobao;package=com.taobao.taobao;S.browser_fallback_url=https%3A%2F%2Ftucanofs.world.tmall.com%2Fshop%2Fview_shop.htm;end">按這裡用淘寶開店鋪</a>
+
+<a class="backup" href="intent://tucanofs.world.tmall.com/shop/view_shop.htm#Intent;scheme=https;package=com.taobao.taobao;S.browser_fallback_url=https%3A%2F%2Ftucanofs.world.tmall.com%2Fshop%2Fview_shop.htm;end">沒反應？按這個</a>
+
+<p>如果問要用什麼開啟，請選「淘寶」</p>
+
+<script>
+  location.href = document.getElementById('go').href;
+</script>
+</body>
+</html>
